@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Sofia+Sans+Condensed:wght@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* root font size is 10px */
+    font-size: 70%;
+    background-image: url(background.png);
+}
+
+#main h1 {
+    margin-top: 20px;
+    margin-left: 9px;
+    font-family: 'Alkatra', cursive;
+    text-decoration-color: #482D1C;
+    text-decoration-style: underline;
+    font-size: 4rem;
+}
+
+#main p {
+    margin-top: 10px;
+    margin-left: 9px;
+    font-family: 'Alkatra', cursive;
+    font-size: 1.5rem;
+
+}
+
+#main h3 {
+    margin-left: 9px;
+    font-family: 'Alkatra', cursive;
+    font-size: 2rem;
+}
+
+.sidebar img {
+    height: 200px;
+    width: 200px;
+    margin-left: -20px;
+    margin-right: 0px;
+    /* margin-top: -10px; */
+    margin-bottom: 0px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    /* z-index: 1; */
+}
+
+body {
+    /* background-image: url(background.png); */
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* top: 25px;
+       left: 25px;
+       z-index: 2; */
+}
+
+.main {
+    margin-left: 190px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.column {
+    /* float: right; */
+    /* margin: -1px 100px -10px 15px; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* gap: 100px; */
+    justify-content: center;
+    align-content: space-around;
+
+}
+
+.column img {
+    border: 10px solid #482D1C;
+    margin: 20px;
+
+}
+
+/*Computer Veiw*/
+@media only screen and (min-width: 769px) {
+    .openbtn {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 350px;
+        position: fixed;
+        z-index: 1;
+        top: 0%;
+        left: 0%;
+        padding: 0;
+        margin: 0;
+        background-color: #482D1C;
+        overflow-x: hidden;
+        padding-top: 20px;
+        max-width: 350px;
+        min-width: none;
+
+    }
+
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-size: 3rem;
+        color: #EBE5DB;
+        display: block;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+        color: #AD1D25;
+    }
+
+    .sidebar .closebtn {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: left;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    header {
+        display: none;
+    }
+
+    .sidebar {
+        width: 190px;
+        height: 100%;
+        align-self: flex-start;
+        padding: 0;
+        margin: 0;
+        margin-right: 5vw;
+    }
+
+    .main {
+        width: 90%;
+        height: 100%;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+/*Tablet Veiw*/
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        flex: wrap;
+
+
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 350px;
+        position: static;
+        z-index: 1;
+        top: 0%;
+        left: 0%;
+        padding: 0;
+        margin: 0;
+        background-color: #482D1C;
+        overflow-x: hidden;
+        padding-top: 20px;
+
+    }
+
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-size: 2.5rem;
+        color: #EBE5DB;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #AD1D25;
+    }
+
+    .main {
+        width: 70%;
+        height: 100%;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #AD1D25;
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .sidebar .closebtn {
+        display: none;
+    }
+
+    /* 
+       .sidebar {
+           width: 190px;
+           height: 100%;
+           align-self: flex-start;
+           padding: 0;
+           margin: 0;
+       } */
+
+    /* .main {
+           width: 50vw;
+           height: 100%;
+           align-self: flex-end;
+           padding: 0;
+           margin: 0;
+       } */
+
+
+}
+
+/*Phone Veiw*/
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+
+    header {
+        display: flex;
+        width: 100vw;
+        height: 15vh;
+        background-color: #482D1C;
+        justify-content: left;
+    }
+
+    header img {
+        width: 30%;
+        height: 100%;
+        display: block;
+        margin-left: 35%;
+        /* margin-right: auto; */
+    }
+
+    /* .openbtn {
+           display: block;
+       } */
+
+    .overlay {
+        display: block;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+        color: #AD1D25;
+    }
+
+    /* The button used to open the sidebar */
+    .openbtn {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #482D1C;
+        color: #EBE5DB;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn a:hover {
+        background-color: #AD1D25;
+    }
+
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: #482D1C;
+        /* Black fallback color */
+        background-color: #482D1C(0, 0, 0, 0.9);
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+
+    .column {
+        z-index: 2;
+    }
+
+    .column img {
+        width: 25%;
+        height: auto;
+        border: 10px solid #482D1C;
+        margin: 20px;
+
+    }
+
+    /* Position the content inside the overlay */
+    .sidebar {
+        display: none;
+
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #EBE5DB;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+    /* .overlay a:hover{
+       color: #AD1D25;
+    } */
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    footer {
+        height: 6vh;
+        background-color: #482D1C;
+        margin-top: 10%;
+    }
+
+    footer h4 {
+        font-family: 'Alkatra', cursive;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+}

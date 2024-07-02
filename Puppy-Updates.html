@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollesby Weatens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-4.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div id="mySidebar" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="About-the-Breed.html">About the Breed</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Puppies.html">Puppies</a>
+                <a href="Puppy-Updates.html">Puppy Updates</a>
+                <a href="Owner-Feedback.html">Owner Feedback</a>
+                <a href="Contact-us.html">Contact Us</a>
+            </div>
+        </div>
+
+
+
+        <div class="sidebar">
+
+            <!-- <div id="mySidebar" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div> -->
+            <img src="Logo.png">
+            <a href="index.html">Home</a>
+            <a href="About-the-Breed.html">About the Breed</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Puppies.html">Puppies</a>
+            <a href="Puppy-Updates.html">Puppy Updates</a>
+            <a href="Owner-Feedback.html">Owner Feedback</a>
+            <a href="Contact-us.html">Contact Us</a>
+        </div>
+        <div id="main">
+            <header>
+                <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+                <img src="Logo.png">
+            </header>
+            <!-- <button class="openbtn" onclick="openNav()">&#9776; Menu</button> -->
+            <h1>Puppy Updates</h1>
+            <p>Please Contact Us for more information on the puppies and up coming litters <p>
+            <h3>Last Litter (insert date) </h3>
+            <div class="column">
+                <img src="Monty(Puppy).png">
+                <img src="Monty2.png">
+                <img src="Monty3.png">
+                <img src="Monty4.png">
+            </div>
+            
+            <h3>Previous Litters</h3>
+            <div class="column">
+                <img src="Monty(Puppy).png">
+                <img src="Monty2.png">
+                <img src="Monty3.png">
+                <img src="Monty4.png">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<footer>
+    <h4>©Charley Ensor 2023</h4>
+</footer>
+
+</html>
+
+<script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "100%";
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+</script>

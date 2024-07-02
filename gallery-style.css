@@ -1,0 +1,44 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: center;
+}
+
+.sidebar {
+    position: fixed;
+}
+
+.row img {
+    width: 15vw;
+    margin: 10px;
+    border: 10px solid #482D1C;
+}
+
+#main {
+    padding-left: 15vw;
+    width: 75vw;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+
+    .container {
+        margin: 0;
+    }
+
+    #main {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+}

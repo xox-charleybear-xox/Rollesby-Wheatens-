@@ -1,0 +1,9 @@
+#main {
+    padding-left: 15vw;
+    width: 75vw;
+
+}
+.column img {
+    border: 10px solid #482D1C;
+    width: 19%;
+}
